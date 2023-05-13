@@ -1,11 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
 
-/*
-	Verti by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2109,11 +2105,63 @@ input, select, textarea {
 					color: #fff;
 
 		}
+		#navL{
+			background-color: black;
+			position: absolute;
+			right:0;
+			top: 0;
+			font-size: 1.5em;
+			margin-top:100px;
+			margin-right: -200px;
+			margin-top: -20px;
+		}	
+		#navL ul{
+			list-style: none;
+			padding-left: 0;
+		}
+
+			#navL ul li {
+				float: left;
+				line-height: 4.5em;
+				padding-left: 1.5em;
+			}
+
+				#navL ul li a, #navL ul li span {
+					-moz-transition: background-color .25s ease-in-out;
+					-webkit-transition: background-color .25s ease-in-out;
+					-ms-transition: background-color .25s ease-in-out;
+					transition: background-color .25s ease-in-out;
+					font-weight: 800;
+					letter-spacing: 0.025em;
+					color: #696969;
+					text-decoration: none;
+					border-radius: 6px;
+					padding: 0.5em 1em 0.5em 1em;
+				}
+
+				#navL ul li > ul {
+					display: none;
+				}
+
+				#navL ul li:hover a, #navL ul li:hover span {
+					background: #fff;
+				}
+
+				#navL ul li.active a, #navL ul li.active span {
+					background: #fff;
+				}
+
+				#navL ul li.current a {
+					background: #444;
+					color: #fff;
+
+		}
 
 		/* Cards */
 		.card {
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 			max-width: 300px;
+			height: 580px;
 			margin: auto;
 			text-align: center;
 			font-family: arial;
@@ -2161,17 +2209,22 @@ input, select, textarea {
 	
 }
 .headT{
-	position: relative;
+	position: absolute;
 	display: flex;
 	
 	/* width:100vw; */
 	align-items: center;
 	justify-content: center;
 	/* flex-direction: row-reverse; */
-	padding: 0;
-	margin: 0;
 	/* margin-top:-100px; */
-	
+	background-color: red;
+	height:0vh;
+	width: 100%;
+}
+
+.headT h2 {
+	padding-left: 0%;
+	font-size: 50px;
 }
 .CardMain{
 	display: flex;

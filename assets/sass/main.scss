@@ -826,6 +826,57 @@
 		}
 
 	}
+	.navL{
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-size: 0.5em;
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+
+			li {
+				float: left;
+				line-height: 4.5em;
+				padding-left: 1.5em;
+
+				a, span {
+					@include vendor('transition', 'background-color .25s ease-in-out');
+					font-weight: 800;
+					letter-spacing: 0.025em;
+					color: #696969;
+					text-decoration: none;
+					border-radius: 6px;
+					padding: 0.5em 1em 0.5em 1em;
+				}
+
+				> ul {
+					display: none;
+				}
+
+				&:hover {
+					a, span {
+						background: #fff;
+					}
+				}
+
+				&.active {
+					a, span {
+						background: #fff;
+					}
+				}
+
+				&.current {
+					a {
+						background: #444;
+						color: #fff;
+					}
+				}
+			}
+		}
+
+	}
 
 	.dropotron {
 		background: #fff;
