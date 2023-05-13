@@ -2016,6 +2016,17 @@ input, select, textarea {
 		margin-right: 50px;
 		
 	}
+	#navC{
+		background-color: black;
+		position: absolute;
+		right:0;
+		top: 0;
+		font-size: 1.5em;
+		margin-top:100px;
+		margin-right: -200px;
+		margin-top: -20px;
+		
+	}
 
 		#nav ul {
 			list-style: none;
@@ -2057,6 +2068,118 @@ input, select, textarea {
 					background: #444;
 					color: #fff;
 				}
+		#navC ul{
+			list-style: none;
+			padding-left: 0;
+		}
+
+			#navC ul li {
+				float: left;
+				line-height: 4.5em;
+				padding-left: 1.5em;
+			}
+
+				#navC ul li a, #navC ul li span {
+					-moz-transition: background-color .25s ease-in-out;
+					-webkit-transition: background-color .25s ease-in-out;
+					-ms-transition: background-color .25s ease-in-out;
+					transition: background-color .25s ease-in-out;
+					font-weight: 800;
+					letter-spacing: 0.025em;
+					color: #696969;
+					text-decoration: none;
+					border-radius: 6px;
+					padding: 0.5em 1em 0.5em 1em;
+				}
+
+				#navC ul li > ul {
+					display: none;
+				}
+
+				#navC ul li:hover a, #navC ul li:hover span {
+					background: #fff;
+				}
+
+				#navC ul li.active a, #navC ul li.active span {
+					background: #fff;
+				}
+
+				#navC ul li.current a {
+					background: #444;
+					color: #fff;
+
+		}
+
+		/* Cards */
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			max-width: 300px;
+			margin: auto;
+			text-align: center;
+			font-family: arial;
+		  }
+		  
+		  .title {
+			color: grey;
+			font-size: 18px;
+		  }
+		  
+		  button {
+			border: none;
+			outline: 0;
+			display: inline-block;
+			padding: 8px;
+			color: white;
+			background-color: #000;
+			text-align: center;
+			cursor: pointer;
+			width: 100%;
+			font-size: 18px;
+		  }
+		  
+		  a {
+			text-decoration: none;
+			font-size: 22px;
+			color: black;
+		  }
+		  
+		  button:hover, a:hover {
+			opacity: 0.7;
+		  }
+.iconS a img
+{
+	height:30px;
+	size: 10px;
+	margin:20px;
+}
+.mainCard {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row-reverse;
+	margin-top:-100px;
+	
+}
+.headT{
+	position: relative;
+	display: flex;
+	
+	/* width:100vw; */
+	align-items: center;
+	justify-content: center;
+	/* flex-direction: row-reverse; */
+	padding: 0;
+	margin: 0;
+	/* margin-top:-100px; */
+	
+}
+.CardMain{
+	display: flex;
+	flex-direction: column;
+	width:90vw;
+	margin-left:-170px;
+	
+}
 
 	.dropotron {
 		background: #fff;
