@@ -934,6 +934,9 @@ button,
 	margin-left:-170px;
 	
 }
+.banner-wrapper{
+    display: flex;
+}
 * Banner */
 
 	#banner {
