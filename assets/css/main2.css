@@ -965,6 +965,15 @@ button,
 			margin-left: 200px;
 		}
 
+.mediaContent{
+    display:flex;
+    justify-content: space-evenly;
+}
+.Fimage img{
+    height:600px;
+
+}
+
 		
 
 			
